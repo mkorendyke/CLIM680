@@ -32,7 +32,7 @@ Link to Metis site
 - Correlate ERA5 with Nino3.4
 - Regress ERA5 with Nino3.4
 
-[ERA5 November to March Atmospheric River Anomalies Composited on the Pacific North America Index] (https://github.com/mkorendyke/CLIM680/blob/master/hw3.ipynb)
+[ERA5 November to March Atmospheric River Anomalies Composited on the Pacific North America Index](https://github.com/mkorendyke/CLIM680/blob/master/hw3.ipynb)
 
 ## Summary
 What have I learned? What do the results show? Is there anything particularly interesting?
