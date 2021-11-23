@@ -32,6 +32,7 @@ Link to Metis site
 ![](era5.AR.10%.PNA.NDJFM.k5.composite.png)
 
 [Assign AR Anomalies to Regimes](https://github.com/mkorendyke/CLIM680/blob/master/AR_notrack_4.assign_clusters.ipynb)
+
 [Plot Regime AR Anomaly Composites](https://github.com/mkorendyke/CLIM680/blob/master/AR_notrack_5.plot_composites.ipynb)
 
 - significant differences in Metis anoms from ERA5 for extended winter AR k=5
@@ -40,7 +41,7 @@ Link to Metis site
 - ERA5 PNA climate index
 
 ![](era5.AR.10%.PNA.NDJFM.PNA_positive.png)
-![](era5.AR.10%.PNA.NDJFM.PNA_positive.png)
+![](era5.AR.10%.PNA.NDJFM.PNA_negative.png)
 
 
 [ERA5 November to March Atmospheric River Anomalies Composited on the Pacific North America Index](https://github.com/mkorendyke/CLIM680/blob/master/hw3.ipynb)
