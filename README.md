@@ -21,6 +21,8 @@ Link to Metis site
 - year-round atmospheric river climatology for ERA5
 - extended winter AR climatology for k=5 clusters ERA5
 
+![](vqvi.climo.1986-2016.png)
+
 [Monthly Climatology of ERA5 Atmospheric River Occurrences](https://github.com/mkorendyke/CLIM680/blob/master/hw2.ipynb)
 
 ### Winter-time Cluster Anomalies
