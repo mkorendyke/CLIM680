@@ -37,6 +37,10 @@ Link to Metis site
 
 - significant differences in Metis anoms from ERA5 for extended winter AR k=5
 
+![](era5_vs_metis199.AR.10%.PNA.NDJFM.k5.diff_anoms.png)
+
+[Calculate Differences and Demonstrate Significance Between Model and ERA5](https://github.com/mkorendyke/CLIM680/blob/master/AR_anom_diffs.ipynb)
+
 ### Atmospheric Rivers, the PNAI, and Nino3.4
 - ERA5 PNA climate index
 
