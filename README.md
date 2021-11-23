@@ -18,15 +18,19 @@ Link to Metis site
 - discuss how atmospheric rivers are measured (algorithm), link to AR identification from metisregimes project
 
 ### Climatology
-- year-round atmospheric river climatology for ERA5
-- extended winter AR climatology for k=5 clusters ERA5
+- year-round vertically integrated moisture flux climatology for ERA5
 
 ![](vqvi.climo.1986-2016.png)
 
-[Monthly Climatology of ERA5 Atmospheric River Occurrences](https://github.com/mkorendyke/CLIM680/blob/master/hw2.ipynb)
+[Monthly Climatology of ERA5 Vertically Integrated Moisture Flux](https://github.com/mkorendyke/CLIM680/blob/master/hw2.ipynb)
+[Identifying Atmospheric Rivers in ERA5 and Metis Data](https://github.com/mkorendyke/CLIM680/blob/master/AR_notrack_2.ipynb)
+[Calculating Climatology and Anomalies of PacNA Atmospheric Rivers, 1986-2015, NDJFM](https://github.com/mkorendyke/CLIM680/blob/master/AR_notrack_3.calcanoms.ipynb)
 
 ### Winter-time Cluster Anomalies
 - extended winter AR anoms for k=5 clusters ERA5
+
+![](era5.AR.10%.PNA.NDJFM.k5.composite.png)
+
 - significant differences in Metis anoms from ERA5 for extended winter AR k=5
 
 ### Atmospheric Rivers, the PNAI, and Nino3.4
