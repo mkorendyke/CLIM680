@@ -63,13 +63,15 @@ First, the PNA index. Positive PNA phase is defined as the PNA index > 1. Negati
 
 [ERA5 November to March Atmospheric River Anomalies Composited on the Pacific North America Index](https://github.com/mkorendyke/CLIM680/blob/master/hw3.ipynb)
 
-- Correlate ERA5 with Nino3.4
+We correlated the monthly means of the atmospheric river anomalies with the Nino3.4 index. There is a significant weak positive correlation over the southwest coast and the Atlantic, and a significant weak negative correlation over mid-eastern US, indicating that when it's an El Nino year, there is some correlation with more atmospheric rivers striking the western coast of Mexico.
 
 ![](era5.AR.10%.PNA.NDJFM.anoms.Nino34_corr.png)
 
-- Regress ERA5 with Nino3.4
+We also regressed the monthly means of the atmospheric river anomalies with the Nino3.4 index. Despite weak correlation, there does not appear to be a linear relationship between atmospheric river anomalies and ENSO, at least not one strong enough to be worth mentioning.
 
 ![](era5.AR.10%.PNA.NDJFM.anoms.Nino34_reg.png)
 
+[ERA5 vs Nino34 (correlation and regression)](https://github.com/mkorendyke/CLIM680/blob/master/AR_Nino34.ipynb)
+
 ## Summary
-What have I learned? What do the results show? Is there anything particularly interesting?
+In the PacNA region, moisture flux magnitude, and therefore the atmospheric rivers, have a seasonal dependency. There are weaker atmospheric rivers that occur further south in the winter than the stronger rivers in the summer. Regimes influence atmospheric rivers over the Pacific, Atlantic, and SE US. The rivers are more affected by the PNA negative phase than the positive one. While the river anomalies are weakly correlated with Nino3.4, there is no linear relationship between the anomalies and ENSO.
