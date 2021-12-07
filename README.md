@@ -13,6 +13,8 @@ ERA5 reanalysis and Metis199. ERA5 provides winds and specific humidity at x lev
 
 [ERA5 documentation](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5)
 
+(Metis is a currently ongoing project in collaboration between COLA at GMU and ECMWF. It does not currently have official documentation.)
+
 ## Results/Code
 
 Atmospheric rivers are calculated by first identifying the appropriate moisture flux magnitude threshold. We use 259kg/ms as this threshold, as it is the top 10% of ERA5 moisture flux magnitude values in the PacNA extended boreal winter. Once the threshold is identified, we take all consecutive points that qualify and group them into objects. We test for whether:
@@ -35,7 +37,11 @@ This shows the moisture flux magnitude climatology in the PacNA region over all 
 [Calculating Climatology and Anomalies of PacNA Atmospheric Rivers, 1986-2015, NDJFM](https://github.com/mkorendyke/CLIM680/blob/master/AR_notrack_3.calcanoms.ipynb)
 
 ### Winter-time Cluster Anomalies
-We focus on the wintertime atmospheric river anomalies as the larger scale pressure patterns have more potential predictability in the winter than in the summer. The patterns, or regimes, were calculated as a part of current research using a simple k-means clustering machine learning algorithm on the PCA of geopotential height anomalies. They are used here to sort the atmospheric river anomalies by time into the appropriate regime. Composites were then calculated. The total number of atmospheric rivers that occurred over all years in the given regime are shown in contours. The anomalous number of times the atmospheric river occurred (with respect to climatology) is shown by the shading. 
+We focus on the wintertime atmospheric river anomalies as the larger scale pressure patterns have more potential predictability in the winter than in the summer. The patterns, or regimes, were calculated as a part of current research using a simple k-means clustering machine learning algorithm on the PCA of geopotential height anomalies and zonal wind anomalies. The regimes for k=5 clusters are shown.
+
+![](era5.total.clusters_5_1986-2015_NDJFM.calc.png)
+
+The regimes are used here to sort the atmospheric river anomalies by time into the appropriate regime. Composites were then calculated. The total number of atmospheric rivers that occurred over all years in the given regime are shown in contours. The anomalous number of times the atmospheric river occurred (with respect to climatology) is shown by the shading. 
 
 The different regimes demonstrate different atmospheric river patterns. The Pacific Wavetrain narrows atmospheric river occurrence over the Pacific and decreases the number of rivers over the Atlantic. In the Arctic Low, rivers are shifted northward and occur more often in the Pacific, and there are more occurrences over the Atlantic as well. The Pacific Trough shifts rivers in the Pacific southward, and decreases the number over the SE US. The Arctic High increases the number of occurrences over the Pacific and the Atlantic. The Alaskan Ridge shifts the rivers away from the central Pacific, and increases the number of occurrences in the SE US.
 
@@ -67,11 +73,11 @@ We correlated the monthly means of the atmospheric river anomalies with the Nino
 
 ![](era5.AR.10%.PNA.NDJFM.anoms.Nino34_corr.png)
 
-We also regressed the monthly means of the atmospheric river anomalies with the Nino3.4 index. Despite weak correlation, there does not appear to be a linear relationship between atmospheric river anomalies and ENSO, at least not one strong enough to be worth mentioning.
+We also regressed the monthly means of the atmospheric river anomalies with the Nino3.4 index. The weak linear regression maxima reflect the positive correlation maxima, such that there is some linear relation between El Nino and atmospheric rivers in these areas. 
 
 ![](era5.AR.10%.PNA.NDJFM.anoms.Nino34_reg.png)
 
 [ERA5 vs Nino34 (correlation and regression)](https://github.com/mkorendyke/CLIM680/blob/master/AR_Nino34.ipynb)
 
 ## Summary
-In the PacNA region, moisture flux magnitude, and therefore the atmospheric rivers, have a seasonal dependency. There are weaker atmospheric rivers that occur further south in the winter than the stronger rivers in the summer. Regimes influence atmospheric rivers over the Pacific, Atlantic, and SE US. The rivers are more affected by the PNA negative phase than the positive one. While the river anomalies are weakly correlated with Nino3.4, there is no linear relationship between the anomalies and ENSO.
+In the PacNA region, moisture flux magnitude, and therefore the atmospheric rivers, have a seasonal dependency. There are weaker atmospheric rivers that occur further south in the winter than the stronger rivers in the summer. Regimes influence atmospheric rivers over the Pacific, Atlantic, and SE US. The rivers are more affected by the PNA negative phase than the positive one. Where the river anomalies are weakly correlated with Nino3.4, there is also a weak linear relationship between the anomalies and ENSO.
